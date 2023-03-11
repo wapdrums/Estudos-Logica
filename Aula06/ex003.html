@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(230, 225, 235);
+            color: rgb(82, 57, 104);
+            font: normal 10pt Arial;
+        }
+        h1{
+            color: rgb(115, 56, 146);
+        } /*Comentario em css*/
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        var n1 = parseInt(window.prompt('Digite um numero'));
+        var n2 = parseInt(window.prompt('Digite outro numero'));
+
+        var s = n1 + n2
+        window.alert('A soma dos valores é: ' + s) // 22 - por causa da concatenação
+
+        // + pra adição (number + number)
+        // + concatenação (string + string)
+
+        // sera necessario fazer conversão de tipo, porque o n recebe string 'digite um numero'
+
+        /* Converter string para numero? 
+
+        number.parsInt(n) ou parseInt(n)
+            converte para numeros inteiros -- SOMENTE NUMEROS INTEIROS
+
+        numeber.parseFloat(n) ou parseFloat(n)
+            converte para real, NUMEROS QUEBRADOS SÃO VALIDOS
+
+        pode ser usado number() -- nova maneira de converter
+        */
+
+        /*
+        e para converter numero para string?
+        String(n)
+        n.toString()
+
+        */
+
+        nome = "gustavo"
+        nome2 = "Bruno"
+        idade = 41
+        idade2 = 25
+        nota = 5
+        nota2 = 8
+
+        window.alert('o aluno ' + nome + ' de ' + idade + ' anos, tirou ' + nota + ' na prova.') // treinando concatenação
+
+        window.alert(`o aluno ${nome2} de ${idade2} anos, tirou ${nota2} na prova.`) // treinando templates strings // entre `` crase (acento)
+
+
+        // templates strings:
+
+        var materia = "JavaScript";
+
+        window.alert(`Eu estou aprendendo ${materia}`)
+
+        // ${} = placeholder
+
+        // s.length // qual o tamanho da string
+        //s.toUpperCase() -- tudo para letra maiuscula
+        //toLowerCase() -- tudo letra minuscula
+
+    </script>
+</body>
+</html>
+
+
+<!--isso é um comentario no html-->

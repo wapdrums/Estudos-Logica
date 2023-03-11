@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        body{
+            font: normal 26px Arial;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <script>
+        var nome = window.prompt('Qual é seu nome?');
+        document.write(`Olá <strong>${nome}!</strong> Seu nome tem ${nome.length} letras <br/>`) 
+
+        document.write(`Seu nome em maiusculas é ${nome.toUpperCase()} <br/> `) 
+
+        document.write(`Seu nome em minusculas é ${nome.toLowerCase()} <br/>`) 
+
+
+        // ln -- usa pra dar espaço
+        // .length mostra quantas letras tem a string
+
+        n1 = 1545.5
+        n1.toFixed(2)
+        document.write(`o numero é ${n1.toFixed(5).replace('.',',')} <br/>`)
+           //.replace('.',',') -- troca . por ,
+
+        document.write(`o numero em real é ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}<br/>`)
+
+        document.write(`o numero em EUROS é ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})}<br/>`)
+
+        document.write(`o numero em DOLAR é ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}<br/>`)
+        //NÃO SE USA MUITO, MAS TRANSFORMA NUMERO EM REAL
+
+     
+    </script>
+</body>
+</html>
